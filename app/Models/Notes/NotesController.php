@@ -9,11 +9,21 @@ use App\Http\Controllers\Controller;
 
 class NotesController extends Controller
 {
+    public $currentEditFolderId = null;
 
     public function index()
     {
         $notes = Explorer::all();
-        return view("notes", compact("notes"));
-        
+        return view('notes', [
+            'notes' => $notes
+        ]);
+
     }
+
+    public function NameEdit()
+    {
+        echo 123;
+    }
+
+
 }
