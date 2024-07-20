@@ -1,6 +1,5 @@
 @extends('layouts.main')
 @section('app')
-@endsection
 <div class="app-window">
     <div class="app-pnl">
         <nav>
@@ -20,5 +19,6 @@
             <div>{{$note->title}}</div>
             @endforeach
         </div>
-    </div>
 </div>
+</div>
+@endsection

@@ -11,5 +11,4 @@
     </div>
     <div class="taskbar"></div>
 </div>
-
 @endsection
