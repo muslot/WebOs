@@ -20,9 +20,10 @@ class NotesController extends Controller
 
     }
 
-    public function NameEdit()
+    public function NameEdit($id)
     {
-        echo 123;
+        $notes = Explorer::find($id);
+        return view('note.edit', compact('notes'));
     }
 
 

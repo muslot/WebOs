@@ -21,3 +21,5 @@ if(!DBHelper::CheckConnection()){
 Route::get('', [NotesController::class,'index']) -> name('note.index');
 
 Route::get('/desktop', [DesktopController::class,'index']) -> name('desktop.index');
+
+Route::get('/note/{notes}', [NotesController::class,'NameEdit']) -> name('note.edit');

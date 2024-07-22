@@ -21,11 +21,15 @@
                         <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-5.png" alt="" width="55"
                             height="55">
                         <!-- <form action="App\Models\Notes\NotesController" method="post">
-                                <input class="folder-inp" type="hidden" placeholder="Folder Name">
-                                <button type="submit">123</button>
-                            </form> -->
+                                    <input class="folder-inp" type="hidden" placeholder="Folder Name">
+                                    <button type="submit">123</button>
+                                </form> -->
 
-                        <div class="folder-name" ondblclick="fff()">{{$note->title}}</div>
+                        <div class="folder-name">{{$note->title}}</div>
+                        <a href="{{route('note.edit', $note->id)}}">
+                            <img src="https://win98icons.alexmeub.com/icons/png/write_wordpad-1.png" alt=""
+                                height="20" width="20">
+                        </a>
 
                     </div>
                 </div>
